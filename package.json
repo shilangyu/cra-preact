@@ -1,6 +1,6 @@
 {
 	"name": "cra-preact",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "Comfort of CRA + preact without ejecting",
 	"bin": {
 		"cra-preact": "./bin/cra-preact.js"
@@ -27,7 +27,7 @@
 		"react-scripts": "^3.4.0"
 	},
 	"dependencies": {
-		"require-in-the-middle": "^5.0.3",
-		"preact": "^10.3.2"
+		"preact": "^10.3.2",
+		"require-in-the-middle": "^5.0.3"
 	}
 }
