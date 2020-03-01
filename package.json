@@ -1,0 +1,32 @@
+{
+	"name": "cra-preact",
+	"version": "0.1.0",
+	"description": "Comfort of CRA + preact",
+	"bin": {
+		"cra-preact": "./bin/cra-preact.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/shilangyu/cra-preact.git"
+	},
+	"keywords": [
+		"preact",
+		"creat-react-app",
+		"rewired",
+		"preact-cra",
+		"cra"
+	],
+	"author": "Marcin Wojnarowski @shilangyu",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/shilangyu/cra-preact/issues"
+	},
+	"homepage": "https://github.com/shilangyu/cra-preact#readme",
+	"peerDependencies": {
+		"preact": "^10.3.2",
+		"react-scripts": "^3.4.0"
+	},
+	"dependencies": {
+		"require-in-the-middle": "^5.0.3"
+	}
+}
