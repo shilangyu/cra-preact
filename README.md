@@ -31,6 +31,8 @@ Cool, done. Now watch the bundle size go down.
 
 ### initial CRA bootstrap
 
+![initial app](assets/initial.png)
+
 ### medium size real-world production project
 
 ![middle size](assets/medium-size.png)
