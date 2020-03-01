@@ -1,4 +1,4 @@
-# create react app with preact
+# [create react app](https://create-react-app.dev/) + [preact](https://preactjs.com/) = 💖
 
 ### _Love the CRA bootstrap? Hate big bundle sizes?_
 
@@ -16,13 +16,13 @@ Replace your `build`, `start` and `test` scripts
 
 ```diff
 "scripts": {
--	"start": "react-scripts start",
--	"build": "react-scripts build",
--   "test": "react-scripts test",
-+	"start": "cra-preact start",
-+	"build": "cra-preact build",
-+   "test": "cra-preact test",
-    "eject": "react-scripts eject"
+- "start": "react-scripts start",
+- "build": "react-scripts build",
+- "test": "react-scripts test",
++ "start": "cra-preact start",
++ "build": "cra-preact build",
++ "test": "cra-preact test",
+  "eject": "react-scripts eject"
 }
 ```
 
@@ -43,7 +43,11 @@ Cool, done. Now watch the bundle size go down.
 While rare, problems may occur.
 
 - Please be aware that `cra-preact` is using preact's compatibility layer (`preact/compat`) and issues with it should be directed to [preact's repo](https://github.com/preactjs/preact/issues)
-- Make sure to develop under the `cra-preact start` script to catch incompatibilities during development
+- Make sure to develop and test with `cra-preact` to catch incompatibilities during development
 - This project requires react-scripts v3+
-- It is **NOT** recommended to plug this into existing projects just as a build script. Incompatibilities will most likely come out during runtime, not compile time
+- It is **NOT** recommended to plug this into existing projects just as a build script. Incompatibilities will most likely surface during runtime, not compile time
 - Because it relies on fine details in `react-scripts` any minor upgrade of it might be a breaking change for `cra-preact`
+
+---
+
+This whole project was inspired by [this](https://github.com/facebook/create-react-app/issues/1230#issuecomment-334284088) github comment.
