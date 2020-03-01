@@ -24,10 +24,10 @@
 	},
 	"homepage": "https://github.com/shilangyu/cra-preact#readme",
 	"peerDependencies": {
-		"preact": "^10.3.2",
 		"react-scripts": "^3.4.0"
 	},
 	"dependencies": {
-		"require-in-the-middle": "^5.0.3"
+		"require-in-the-middle": "^5.0.3",
+		"preact": "^10.3.2"
 	}
 }

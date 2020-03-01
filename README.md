@@ -25,8 +25,6 @@ Replace your `build` and `start` scripts
 }
 ```
 
-`cra-preact` has `react-scripts@^3` and `preact@^10` as peer dependencies, make sure you have them installed.
-
 Cool, done. Now watch the bundle size go down.
 
 ## bundle size drop porn
@@ -35,11 +33,13 @@ Cool, done. Now watch the bundle size go down.
 
 ### medium size real-world production project
 
+![middle size](assets/medium-size.png)
+
 ## disclaimer
 
 While rare, problems may occur.
 
 - Please be aware that `cra-preact` is using preact's compatibility layer (`preact/compat`) and issues with it should be directed to [preact's repo](https://github.com/preactjs/preact/issues)
 - Make sure to develop under the `cra-preact start` script to catch incompatibilities during development
-- This project requires preact v10+ and react-scripts v3+
+- This project requires react-scripts v3+
 - It is **NOT** recommended to plug this into existing projects just as a build script. Incompatibilities will most likely come out during runtime, not compile time
