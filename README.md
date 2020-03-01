@@ -12,15 +12,16 @@ Write your code as if you weren't using `preact`, continue importing `react`.
 
 ## usage
 
-Replace your `build` and `start` scripts
+Replace your `build`, `start` and `test` scripts
 
 ```diff
 "scripts": {
 -	"start": "react-scripts start",
-+	"start": "cra-preact start",
 -	"build": "react-scripts build",
+-   "test": "react-scripts test",
++	"start": "cra-preact start",
 +	"build": "cra-preact build",
-    "test": "react-scripts test",
++   "test": "cra-preact test",
     "eject": "react-scripts eject"
 }
 ```
@@ -45,3 +46,4 @@ While rare, problems may occur.
 - Make sure to develop under the `cra-preact start` script to catch incompatibilities during development
 - This project requires react-scripts v3+
 - It is **NOT** recommended to plug this into existing projects just as a build script. Incompatibilities will most likely come out during runtime, not compile time
+- Because it relies on fine details in `react-scripts` any minor upgrade of it might be a breaking change for `cra-preact`
