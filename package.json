@@ -1,7 +1,7 @@
 {
 	"name": "cra-preact",
 	"version": "0.1.0",
-	"description": "Comfort of CRA + preact",
+	"description": "Comfort of CRA + preact without ejecting",
 	"bin": {
 		"cra-preact": "./bin/cra-preact.js"
 	},
@@ -14,7 +14,8 @@
 		"creat-react-app",
 		"rewired",
 		"preact-cra",
-		"cra"
+		"cra",
+		"no-ejecting"
 	],
 	"author": "Marcin Wojnarowski @shilangyu",
 	"license": "MIT",
