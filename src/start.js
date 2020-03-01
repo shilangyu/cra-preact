@@ -1,7 +1,7 @@
 const hookIntoRequire = require('require-in-the-middle')
 
 hookIntoRequire(['react-scripts/config/webpack.config'], configFactory => {
-	const config = configFactory('production')
+	const config = configFactory('development')
 
 	config.resolve.alias['react'] = 'preact/compat'
 	config.resolve.alias['react-dom'] = 'preact/compat'
@@ -10,4 +10,4 @@ hookIntoRequire(['react-scripts/config/webpack.config'], configFactory => {
 	return () => config
 })
 
-require('react-scripts/scripts/build')
+require('react-scripts/scripts/start')
