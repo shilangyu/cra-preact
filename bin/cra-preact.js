@@ -12,8 +12,8 @@ if (args.length === 1 && ['build', 'start', 'test'].includes(args[0])) {
 
 	try {
 		require(`cra-preact/src/${action}`)
-	} catch {
-		exitWith('Failed to run the script. Are you sure you have react-scripts v3+?')
+	} catch (e) {
+		exitWith('Failed to run the script. Are you sure you have react-scripts v3+?\n', e)
 	}
 } else if (args.includes('eject')) {
 	exitWith(`Don't eject with cra-preact, it does nothing special. Eject with react-scripts.
