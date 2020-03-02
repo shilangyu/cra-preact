@@ -12,14 +12,35 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm build and test
+
+      - name: Install yarn
+        run: npm i -g yarn
+
+      - name: Setup test project
         run: |
-          npm i
-          npm run build
-          npm test
+          npx create-react-app test-app
+          cd test-app
+
+          yarn add file:..
+
+          sed -i 's/react-scripts start/cra-preact start/g' package.json
+          sed -i 's/react-scripts build/cra-preact build/g' package.json
+          sed -i 's/react-scripts test/cra-preact test/g' package.json
+
+          cd ..
+        env:
+          CI: true
+
+      - name: Testing
+        run: |
+          cd test-app
+
+          yarn test
+          yarn build
         env:
           CI: true
