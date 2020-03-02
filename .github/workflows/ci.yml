@@ -40,7 +40,16 @@ jobs:
         run: |
           cd test-app
 
+          # ok!
           yarn test
           yarn build
+
+          # bad!
+          if yarn cra-react eject 2> /dev/null ; then
+            exit 1
+          fi
+          if yarn cra-react random-arg 2> /dev/null ; then
+            exit 1
+          fi
         env:
           CI: true
