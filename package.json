@@ -1,6 +1,6 @@
 {
 	"name": "cra-preact",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "Comfort of CRA + preact without ejecting",
 	"bin": {
 		"cra-preact": "./bin/cra-preact.js"
