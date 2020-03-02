@@ -1,5 +1,7 @@
 # [create react app](https://create-react-app.dev/) + [preact](https://preactjs.com/) = 💖
 
+[![](https://github.com/shilangyu/cra-preact/workflows/ci/badge.svg)](https://github.com/shilangyu/cra-preact/actions)
+
 ### _Love the CRA bootstrap? Hate big bundle sizes?_
 
 ```sh
