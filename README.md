@@ -1,3 +1,5 @@
+⚠️ This project is [now archived](https://github.com/shilangyu/cra-preact/issues/5#issuecomment-1515847168). You should use [Vite](https://vitejs.dev/) with the Preact preset instead. ⚠️
+
 # [create react app](https://create-react-app.dev/) + [preact](https://preactjs.com/) = 💖
 
 [![](https://github.com/shilangyu/cra-preact/workflows/ci/badge.svg)](https://github.com/shilangyu/cra-preact/actions)
